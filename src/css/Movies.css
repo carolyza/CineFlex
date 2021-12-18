@@ -1,6 +1,7 @@
 .LayoutMovies{
     display: flex;
     flex-direction: column;
+    margin-top: 67px;
 }
 
 .movies{
@@ -14,16 +15,16 @@ gap: 38px;
 
 }
 
-header{
+.LayoutMovies header{
 height: 110px;
-width: 374px;
+width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
 
 }
 
-header h1{
+.LayoutMovies header h1{
 font-family: Roboto;
 font-size: 24px;
 font-style: normal;

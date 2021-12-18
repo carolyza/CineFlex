@@ -5,7 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 8932498237489723;
 }
 
 .Top h1{

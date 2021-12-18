@@ -1,0 +1,114 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.time{
+height: 35px;
+width: 100%;
+
+}
+
+.time h2{
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 23px;
+text-align: left;
+margin-left: 24px;
+margin-bottom: 22px;
+
+}
+.seatsMovie{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 24px;
+ 
+}
+
+.sessions{
+    margin-bottom:117px;
+}
+
+.session h3{
+    height: 43px;
+width: 82px;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.02em;
+text-align: center;
+background-color: #E8833A;
+align-items: center;
+display: flex;
+justify-content: center;
+margin-right: 8px;
+color: #FFFFFF;
+;
+}
+
+.movieInfo{
+height: 117px;
+width: 100%;
+background-color: #DFE6ED;
+display: flex;
+flex-direction: row;
+
+align-items: center;
+position: fixed;
+bottom: 0px;
+left: 0px;
+
+}
+
+.poster{
+    height: 89px;
+    width: 64px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px #0000001A;
+margin-left: 10px;
+margin-right: 14px;
+    
+}
+
+.poster img{
+height: 72px;
+width: 48px;
+
+}
+
+.title h2{
+    font-family: Roboto;
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+
+}
+
+.layoutSessions header{
+    margin-top: 67px;
+    height: 110px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.layoutSessions header h1{
+    font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+}

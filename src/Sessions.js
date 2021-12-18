@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Session from "./Session.js";
+import "./css/Sessions.css"
 
 export default function Sessions() {
   const { idSessions } = useParams();
-  const [Session, setSession] = useState([]);
+  const [Sessions, setSession] = useState([]);
+  const [Teste, setTeste] = useState([]);
 
   useEffect(() => {
     const requisicao = axios.get(
@@ -14,18 +16,28 @@ export default function Sessions() {
     );
 
     requisicao.then((res) => {
-      setSession(res.data);
+      setSession(res.data)
+      setTeste(res.data.days);
     });
   }, []);
 
+  if(Sessions.length === 0){
+    return(
+      <div className="LayoutSessions">
+      <h1>Carregando...</h1>
+      </div>
+    )
+   
+  }
+ console.log(Sessions.days);
 return(
-<div className="LayoutSessions">  
+<div className="layoutSessions">  
 <header>
         <h1>Selecione o horário</h1>
 </header>
 <div className="sessions">
   
-    {Session.days.map((ses) => <Session 
+    {Sessions.days.map((ses) => <Session 
     id={ses.id}
     date={ses.date}
     weekday={ses.weekday}
@@ -34,12 +46,12 @@ return(
 
 
 </div>
-<footer>
+<footer className="movieInfo">
     <div className="poster">
-        <img src={Session.posterURL}></img>
+        <img src={Sessions.posterURL}></img>
     </div>
     <div className="title">
-        <h2>{Session.title}</h2>
+        <h2>{Sessions.title}</h2>
     </div>
 </footer>
 </div>
