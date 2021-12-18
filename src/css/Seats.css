@@ -1,0 +1,199 @@
+.layoutSeats header{
+    margin-top: 67px;
+}
+.layoutSeats header{
+    margin-top: 67px;
+    height: 110px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.layoutSeats{
+    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.layoutSeats header h1{
+    font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+}
+
+.layoutSeats button{
+    margin-bottom: 147px;
+    margin-top: 50px;
+    height: 42px;
+    border: none ;
+width: 225px;
+border-radius: 3px;
+background: #E8833A;
+color: #FFFFFF;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.04em;
+text-align: center;
+
+
+
+
+}
+
+.seats{
+    display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 18px 7px;
+  
+}
+
+.seatMovie{
+    height: 26px;
+width: 26px;
+border-radius: 12px;
+background: #C3CFD9;
+border: 1px solid #808F9D;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.seatMovie h2{
+    font-family: Roboto;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0.04em;
+text-align: center;
+
+}
+
+.selected p{
+    height: 25px;
+width: 25px;
+left: 78px;
+top: 377px;
+border-radius: 17px;
+background: #8DD7CF;
+border: 1px solid #1AAE9E;
+margin-bottom:0px;
+}
+
+.available p{
+    height: 25px;
+width: 25px;
+left: 78px;
+top: 377px;
+border-radius: 17px;
+background: #C3CFD9;
+margin-bottom:0px;
+
+border: 1px solid #7B8B99
+}
+
+.unavailable p{
+    height: 25px;
+width: 25px;
+left: 78px;
+top: 377px;
+border-radius: 17px;
+background: #FBE192;
+
+border: 1px solid #F7C52B;
+margin-bottom:0px;
+}
+
+.caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:75px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.available{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.unavailable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caption h3{
+font-family: Roboto;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: -0.013em;
+text-align: left;
+
+}
+.buyerInfo{
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 42px;
+    
+}
+
+input{
+    height: 51px;
+width: 327px;
+left: 24px;
+top: 497px;
+border-radius: 3px;
+border: 1px solid #D4D4D4;
+padding-left: 18px;
+margin-bottom: 7px;
+}
+
+input::placeholder{
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #AFAFAF;
+    
+}
+
+.buyerInfo h2{
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.yellow{
+    background: #FBE192;
+    border: 1px solid #F7C52B;
+}
