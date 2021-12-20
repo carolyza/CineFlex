@@ -20,7 +20,7 @@ export default function Seat({ id, name, isAvailable, setTicket, setFinish }) {
       list.push(check);
       tickets.push(numberSeat);
 
-      //   setFinish(list);
+      setFinish(list);
       setTicket(tickets);
       setSeatColor("green");
     }

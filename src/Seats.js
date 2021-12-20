@@ -14,7 +14,6 @@ export default function Seats({
   finish,
   InputName,
   InputCPF,
-  Post,
   setMovieName,
   setDate,
   setHour,
@@ -46,15 +45,12 @@ export default function Seats({
     setHour(Seats.name);
     setMovieName(Seats.movie.title);
 
-    console.log(Seats.day.date);
-
     const promise = axios.post(
       "https://mock-api.driven.com.br/api/v4/cineflex/seats/book-many",
-      { finish, InputName, InputCPF }
+      { ids: finish, name: InputName, cpf: InputCPF }
     );
     promise.then(() => {
-      console.log(finish);
-      // setFinish(finish)
+      setFinish(finish);
       setInputName(InputName);
       setInputCPF(InputCPF);
     });
@@ -74,6 +70,7 @@ export default function Seats({
             name={sea.name}
             isAvailable={sea.isAvailable}
             setTicket={setTicket}
+            setFinish={setFinish}
           />
         ))}
       </div>
