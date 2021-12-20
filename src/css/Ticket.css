@@ -1,0 +1,72 @@
+.finalPage {
+  margin-top: 67px;
+}
+
+.finalPage h1 {
+  height: 110px;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #247a6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finalPage h2 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.finalPage p {
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.returnHome {
+  border: none;
+  height: 42px;
+  width: 225px;
+  left: 74px;
+  top: 622px;
+  border-radius: 3px;
+  background: #e8833a;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.ticketInfo {
+  margin-left: 29px;
+}
+
+.final {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin-bottom: 51px;
+}
