@@ -197,3 +197,9 @@ input::placeholder{
     background: #FBE192;
     border: 1px solid #F7C52B;
 }
+
+.green{
+    background: #8DD7CF;
+    border: 1px solid #45BDB0;
+
+}

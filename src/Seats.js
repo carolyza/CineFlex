@@ -5,10 +5,11 @@ import { useParams } from "react-router-dom";
 import Seat from "./Seat.js";
 import "./css/Seats.css";
 
-export default function Seats() {
+export default function Seats({setInputName, setInputCPF, InputName, InputCPF}) {
     const [Seats, setSeats] = useState([]);
     const { idSeats } = useParams();
-    const [SeatColor, setSeatColor] = useState();
+    
+    
   
     useEffect(() => {
       const promisse = axios.get(
@@ -19,6 +20,10 @@ export default function Seats() {
         setSeats(res.data);
       });
     }, []);
+
+
+
+
 
  if(Seats.length === 0){
             return(
@@ -59,13 +64,13 @@ export default function Seats() {
         </div>
         <div className="buyerInfo">
 <h2>Nome do comprador:</h2>
-<input placeholder="Digite seu nome..."></input>
+<input onChange= {(event) => setInputName(event.target.value)} placeholder="Digite seu nome..."></input>
 <h2>CPF do comprador:</h2>
-<input placeholder="Digite seu CPF..."></input>
+<input onChange={(event) => setInputCPF(event.target.value)} placeholder="Digite seu CPF..."></input>
         </div>
-
+<Link to={`/ingresso`}>
         <button> Reservar assento(s)</button>
-
+</Link>
         <footer className="movieInfo">
             <div className="poster">
                 <img src={Seats.movie.posterURL}></img>

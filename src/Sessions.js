@@ -29,7 +29,7 @@ export default function Sessions() {
     )
    
   }
- console.log(Sessions.days);
+ 
 return(
 <div className="layoutSessions">  
 <header>

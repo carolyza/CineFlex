@@ -48,7 +48,9 @@ display: flex;
 justify-content: center;
 margin-right: 8px;
 color: #FFFFFF;
-;
+border-radius: 3px;
+margin-bottom: 23px;
+
 }
 
 .movieInfo{
